@@ -3,10 +3,123 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hello World Page</title>
+    <meta name="description" content="Marika Swanberg - Machine Learning Engineer & Researcher specializing in Differential Privacy and Cryptography.">
+    <title>Marika Swanberg | Researcher & Engineer</title>
+    <style>
+        /* Basic CSS for readability - You can replace this with a separate .css file */
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; line-height: 1.6; color: #333; max-width: 900px; margin: 0 auto; padding: 20px; }
+        header { text-align: center; margin-bottom: 40px; border-bottom: 1px solid #eaeaea; padding-bottom: 20px; }
+        h1 { margin-bottom: 5px; color: #2c3e50; }
+        h2 { color: #2c3e50; border-bottom: 2px solid #f4f4f4; padding-bottom: 10px; margin-top: 40px; }
+        .subtitle { color: #666; font-size: 1.1em; }
+        .social-links a { margin: 0 10px; text-decoration: none; color: #0066cc; font-weight: bold; }
+        .paper { margin-bottom: 20px; }
+        .paper-title { font-weight: bold; font-size: 1.05em; }
+        .authors { font-style: italic; color: #555; }
+        .venue { color: #777; font-size: 0.9em; }
+        footer { margin-top: 50px; text-align: center; font-size: 0.8em; color: #888; }
+    </style>
 </head>
 <body>
-    <h1>Hello World!</h1>
-    <p>This is my first web page.</p>
+
+    <header>
+        <h1>Marika Swanberg</h1>
+        <p class="subtitle">AI Agent Safety Engineer & Researcher in Google Chrome</p>
+        
+        <div class="social-links">
+            <a href="https://scholar.google.com/citations?user=IoyQ-30AAAAJ&hl=en" target="_blank">Google Scholar</a> |
+            <a href="https://www.linkedin.com/in/marika-swanberg" target="_blank">LinkedIn</a> |
+            <a href="https://github.com/marika-swanberg" target="_blank">GitHub</a>
+        </div>
+    </header>
+
+    <section id="about">
+        <h2>About Me</h2>
+        <div class="bio">
+            <p>
+                I am an AI Safety Engineer and Researcher on the Chrome team at Google in New York City. 
+                I design and productionize safety mechanisms for AI agents (see this <a href="https://security.googleblog.com/2025/12/architecting-security-for-agentic.html">blog post</a> featuring my team's work). I was briefly a part of the Privacy Sandbox where I did in-house differential privacy research for private model training at scale.
+            </p>
+            <p>
+                Prior to joining Google, I completed my PhD in Computer Science at Boston University, where I was advised by 
+                <a href="https://cs-people.bu.edu/ads22/">Adam Smith</a> and served as a Hariri Institute Graduate Student Fellow. My research focused on <strong>differential privacy </strong>, and I also worked on semi-related topics like: <a href="https://arxiv.org/abs/2410.19482">measuring pretraining data memorization by LLMs</a>, <a href="https://arxiv.org/abs/2210.07876">formalizing the Right to Be Forgotten</a>, and <a href="https://eprint.iacr.org/2022/376">modeling secure mesaging in the universal composability framework</a>.
+                
+            </p>
+            <h3>Persistent themes in my work</h3>
+            <ul>
+                <li><strong>Threat modeling:</strong> Carefully defining the powers and scope of adversaries in a variety of settings.</li>
+                <li><strong>Designing real-world defenses:</strong> Designing effective and scalable defenses for real systems.</li>
+                <li><strong>Breaking things:</strong> Whether it's a lower bound argument or a defense, I like to find weak points.</li>
+            </ul>
+
+            <h4>Some prior dabblings</h4>
+            <ul>
+                <li><strong>Teaching:</strong> I was a Visiting Assistant Professor (and faculty chaperone for the ski club) at Reed College for the Spring 2023 semester, where I taught Algorithms and Data Structures.</li>
+                <li><strong>Internships:</strong> I was lucky to have interned at Tumult Labs with Damien Desfontaines and Sam Haney, as well as twice at Google Research, on Sergei Vassilvitskii's team and Peter Kairouz's team.</li>
+                <li><strong>Textbooks:</strong> During my undergrad I contributed detailed feedback to Boaz Barak's forthcoming book on <a href="https://introtcs.org/public/lec_00_0_preface.html#acknowledgements">Introduction to TCS</a> as well as Irena Swanson's <a href="https://www.e-booksdirectory.com/details.php?ebook=11145">Introduction to Analysis textbook</a>.</li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="publications">
+        <h2>Selected Research & Publications</h2>
+        
+        <article class="paper">
+            <div class="paper-title">Measuring memorization in language models via probabilistic extraction</div>
+            <div class="authors">Jamie Hayes, Marika Swanberg, Harsh Chaudhari, Itay Yona, Ilia Shumailov, Milad Nasr, Christopher A Choquette-Choo, Katherine Lee, A Feder Cooper</div>
+            <div class="venue">NAACL 2025</div>
+            <p>We introduce probabilisitic discoverable extraction, a new definition of memorization that takes into account sampling methods used by LLMs and show that it provides a more nuanced quantification of training data memorization in a realistic adversarial setting compared to previous measures.</p>
+            <a href="https://arxiv.org/abs/2410.19482">[Link to Paper]</a>
+        </article>
+        
+        <article class="paper">
+            <div class="paper-title">Beyond the Worst Case: Extending Differential Privacy Guarantees to Realistic Adversaries</div>
+            <div class="authors">Marika Swanberg, Meenatchi Sundaram Muthu Selva Annamalai, Jamie Hayes, Borja Balle, Adam Smith</div>
+            <div class="venue">ArXiv</div>
+            <p>This work creates a framework to compute high-probability guarantees for DP mechanisms against more realistic classes of attackers rather than worst-case theoretical adversaries. In particular it allows us to do "canary-less" auditing of LLMs in one run.</p>
+            <a href="https://arxiv.org/abs/2507.08158">[Link to Paper]</a>
+        </article>
+
+        <article class="paper">
+            <div class="paper-title">Control, Confidentiality, and the Right to Be Forgotten</div>
+            <div class="authors">Aloni Cohen, Adam Smith, Marika Swanberg, Prashant Nalini Vasudevan</div>
+            <div class="venue">ACM SIGSAC Conference on Computer and Communications Security (CCS 2023)</div>
+            <p>Explores how deletion should be formalized in complex systems, critiquing current machine unlearning definitions.</p>
+            <a href="https://arxiv.org/abs/2210.07876">[Link to Paper]</a>
+        </article>
+
+        <article class="paper">
+            <div class="paper-title">Differentially Private Sampling from Distributions</div>
+            <div class="authors">Sofya Raskhodnikova, Satchit Sivakumar, Adam Smith, Marika Swanberg</div>
+            <div class="venue">NeurIPS 2022 and SIAM 2025</div>
+            <p>Investigates the complexity of sampling from a distribution while maintaining privacy, offering new lower bounds for fundamental statistical tasks. Fun fact: the main lower bound technique came from my and Satchit's final project for Sofya's Sublinear Algorithms course! </p>
+            <a href="https://epubs.siam.org/doi/full/10.1137/22M1538703">[Link to Journal Version]</a>
+        </article>
+    </section>
+
+    <section id="other">
+        <h2>Other things about me</h2>
+        <ul>
+            <li>I am half Swedish and half American (native bilingual, etc.).</li>
+            <li>I enjoy swimming very much.</li>
+            </ul>
+       
+    </section>
+
+
+
+    <section id="contact">
+        <h2>Contact</h2>
+        Feel free to reach out, especially if you'd like to invite me for an in-person talk in a nice destination.
+        <ul>
+            <li><strong>Email:</strong> <a href="mailto:marikaswanberg@gmail.com">marikaswanberg@gmail.com</a></li>
+            <li><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/marika-swanberg">linkedin.com/in/marika-swanberg</a></li>
+        </ul>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 Marika Swanberg. All rights reserved. This website was last updated on Jan 15, 2026.</p>
+    </footer>
+
 </body>
 </html>
